@@ -63,7 +63,7 @@ def header():
     cols = [INFO, VIO, OK, PINK, WARN]
     for (x, y), c in zip(nodes, cols):
         b += f'<circle cx="{x}" cy="{y}" r="16" fill="{BG}" stroke="{c}" stroke-width="3"/><circle cx="{x}" cy="{y}" r="6" fill="{c}"/>'
-    svg("header.svg", w, h, b, "CarlosNuBa, Técnico de Sistemas",
+    svg("header-v2.svg", w, h, b, "CarlosNuBa, Técnico de Sistemas",
         "Cabecera estilo panel de estado: CarlosNuBa, Técnico de Sistemas. Infraestructura híbrida, redes, seguridad y automatización. Indicador ALL SYSTEMS OPERATIONAL y una red de nodos con paquetes animados.", d)
 
 
