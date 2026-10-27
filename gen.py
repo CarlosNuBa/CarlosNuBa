@@ -45,7 +45,7 @@ def header():
         b += f'<line x1="{i}" y1="0" x2="{i}" y2="{h}" stroke="{EDGE}" stroke-opacity=".35"/>'
     for j in range(0, 300, 60):
         b += f'<line x1="0" y1="{j}" x2="{w}" y2="{j}" stroke="{EDGE}" stroke-opacity=".35"/>'
-    b += f'<text x="60" y="120" font-size="64" font-weight="800" fill="{TEXT}">Carlos Nunes</text>'
+    b += f'<text x="60" y="120" font-size="64" font-weight="800" fill="{TEXT}">CarlosNuBa</text>'
     b += f'<text x="62" y="170" font-size="26" fill="url(#g)" font-weight="600">Técnico de Sistemas</text>'
     b += f'<text x="62" y="208" font-size="19" fill="{MUTED}">Infraestructura híbrida · Redes · Seguridad · Automatización</text>'
     # píldora de estado
@@ -63,8 +63,8 @@ def header():
     cols = [INFO, VIO, OK, PINK, WARN]
     for (x, y), c in zip(nodes, cols):
         b += f'<circle cx="{x}" cy="{y}" r="16" fill="{BG}" stroke="{c}" stroke-width="3"/><circle cx="{x}" cy="{y}" r="6" fill="{c}"/>'
-    svg("header.svg", w, h, b, "Carlos Nunes, Técnico de Sistemas",
-        "Cabecera estilo panel de estado: Carlos Nunes, Técnico de Sistemas. Infraestructura híbrida, redes, seguridad y automatización. Indicador ALL SYSTEMS OPERATIONAL y una red de nodos con paquetes animados.", d)
+    svg("header.svg", w, h, b, "CarlosNuBa, Técnico de Sistemas",
+        "Cabecera estilo panel de estado: CarlosNuBa, Técnico de Sistemas. Infraestructura híbrida, redes, seguridad y automatización. Indicador ALL SYSTEMS OPERATIONAL y una red de nodos con paquetes animados.", d)
 
 
 # ---------------------------------------------------------------- KPIs (cualitativos)
